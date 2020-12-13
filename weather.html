@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>El tiempo en tu ciudad</title>
+</head>
+<body>
+    <h1 class="display-3">El clima en tu ciudad</h1>
+        <form action="form" class="form">
+            
+            <div  class="input ">
+                <input type="text" class="input-ciudad" placeholder="Ingresa una ciudad para conocer el clima" aria-label="Ciudad" >
+                <button class="btn btn-secondary" type="button" >Buscar</button>
+            </div>
+        </form>
+    
+    
+        
+            <div class="datos ">
+                <!--<div id="icon"><img id="wicon" src="" alt="Weather icon"></div>-->
+                <div class="temp">
+                    <div id="temp-actual">
+                        Actual
+                        <p class="temp-actual"></p>
+                    </div>
+                    <div id="temp-min">
+                        Min
+                        <p class="temp-min"></p>
+                    </div>
+                    <div id="temp-max">
+                        Max
+                        <p class="temp-max"></p>
+                    </div>
+                    <div class="icono">
+                        <p class="descripcion"></p>
+                        <img class="img-icon" src="" alt="icon">
+                    </div>
+                </div>
+                
+                <div class="ciudad">
+                    <p class="nom-ciudad"></p>
+                    <p class="country"></p>
+                    <div class="coord">
+                        <p class="latitud"></p>
+                        <p class="longitud"></p>
+                        <p class="humedad"></p>
+                        <div class="presion">
+                            <img class="ico-pre" src="icon-presion.jpg" alt="presion">
+                            <p class="presion-at"></p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <p></p>
+            </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
